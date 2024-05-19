@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css" />
+    <title>가위바위보 게임</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">홈</a></li>
+          <li><a href="#about">도움말</a></li>
+          <li><a href="#rsp">가위바위보</a></li>
+        </ul>
+        <img src="./cat.png" alt="고양이 로고" />
+      </nav>
+    </header>
+    <main>
+      <article id="home">
+        <section>
+          <button id="dogImageButton">강아지 불러오기</button>
+          <button id="catImageButton">고양이 불러오기</button>
+        </section>
+        <div id="imageContainer"></div>
+      </article>
+      <article id="about">
+        <h3>그냥 가위바위보 하시면 됩니다.</h3>
+      </article>
+      <article id="rsp">
+        <section id="result">
+          <h3 id="headingComputer">컴퓨터</h3>
+          <h3 id="message"></h3>
+          <h3 id="headingMe">나</h3>
+          <div id="resultComputer"><img src="./start.png" alt="시작" /></div>
+          <h3 id="versus">vs</h3>
+          <div id="resultMe"><img src="./start.png" alt="시작" /></div>
+        </section>
+        <section id="selectButton">
+          <button id="scissorsButton"><img src="./scissors.png" alt="가위" /></button>
+          <button id="rockButton"><img src="./rock.png" alt="바위" /></button>
+          <button id="paperButton"><img src="./paper.png" alt="보" /></button>
+        </section>
+      </article>
+      <button id="top">Top</button>
+    </main>
+    <footer>
+      <p>Git Hub Mini-Project</p>
+      <p>wisamks</p>
+      <p>&copy; 저작권</p>
+    </footer>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
