@@ -375,6 +375,17 @@ nav > img:hover {
      height: 3vw;
    }
    
+   .resultContainer {
+    gap: 5vh;
+   }
+   .resultContainer .newResultMessage {
+    font-size: 15vh;
+  }
+  .resultContainer .retryMessage {
+    font-size: 5vh;
+    margin-top: auto;
+  }
+
    #top {
      width: 3vw;
      height: 3vw;
