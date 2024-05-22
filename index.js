@@ -10,6 +10,7 @@ selectButton.addEventListener('click', handleRsp);
 const top = document.getElementById('top');
 top.addEventListener('click', (event) => {
   event.preventDefault();
+  if (event.target.classList.contains('deActive')) {return;}
   window.scrollTo({
     top: 0,
     left: 0,

@@ -1,3 +1,5 @@
+import showResult from './showResult.js';
+
 const srcArr = ['./scissors.png', './rock.png', './paper.png'];
 const rspArr = ['scissors', 'rock', 'paper'];
 
@@ -59,6 +61,7 @@ const checkWin = () => {
 let timer;
 const handleRsp = event => {
   event.preventDefault();
+  if (event.target.classList.contains('deActive')) {return;}
   
   const targetNode = event.target;
   const nodeName = targetNode.nodeName
@@ -70,6 +73,7 @@ const handleRsp = event => {
       message.innerText = '게임중';
       await rspCount(nodeName, targetNode);
       const resultMessage = checkWin();
+      showResult(resultMessage);
       message.innerText = resultMessage;
       timer = null;
     });

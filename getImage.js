@@ -25,6 +25,7 @@ const getSrc = (id, data) => {
 
 const getImage = async event => {
   event.preventDefault();
+  if (event.target.classList.contains('deActive')) {return;}
   if (imageContainer.firstElementChild) {
     opacityAnimation(imageContainer.firstElementChild, 1, 0);
   }
